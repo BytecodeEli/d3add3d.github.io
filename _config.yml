@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://d3add3d.net" # the base hostname & protocol for your site
 twitter_username: D3add3d
 github_username:  d3add3d
+keybase_username: d3add3d
 
 # Build settings
 markdown: kramdown
