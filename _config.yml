@@ -11,7 +11,8 @@ email: d3add3d@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   My lair :P
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://d3add3d.net" # the base hostname & protocol for your site
+url: "https://d3add3d.net" # the base hostname & protocol for your site
+enforce_ssl: d3add3d.net
 twitter_username: D3add3d
 github_username:  d3add3d
 keybase_username: d3add3d
