@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Double CR2450 ATTiny85 powered WS2812B RGB LED pendant
+date:   2016-09-24 14:40:00 +0200
 ---
 Nice... I like that title, seems too similar to the eBay listings :D
 

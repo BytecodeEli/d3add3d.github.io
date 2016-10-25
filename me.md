@@ -4,8 +4,6 @@ title: About me
 permalink: /me/
 ---
 
-This is me, D3add3d, 17 y.o. programmer with desire to learn how to make PC games.  
+This is me, D3add3d, 18 y.o. programmer with desire to learn ALL THE THINGS ABOUT PROGRAMMING, COMPUTERS, etc.!  
 I DO STUFF!! :P
-
-Ask me anything:   [ask.fm/D3add3d](https://ask.fm/D3add3d)
 
