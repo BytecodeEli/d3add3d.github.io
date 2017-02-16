@@ -1,7 +1,0 @@
----
-layout: post
-title:  "REDO!"
-date:   2016-09-16 19:35:00 +0200
-categories: updates
----
-Everything is gone! I figured: why post anything if in the end I won't do what I promised...
