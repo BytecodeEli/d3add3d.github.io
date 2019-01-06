@@ -24,15 +24,61 @@ main {
 	color: rgba(255,255,255,1);
 	text-align: center;
 	width: 100vw;
-	height: calc(100% - 5.3rem);
+	height: calc(100% - (5.3rem + 1.8rem));
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/*overflow-y: scroll;*/
 }
 footer {
 	text-align: center;
 	font-size: 0.8rem;
 	color: rgba(255,255,255,0.4);
 	height: 1.8rem;
+	position: absolute;
+	bottom: 0;
+}
+.cubes-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	align-content: center;
+	width: 70vw;
+	height: 100%;
+	overflow-y: auto;
+}
+.cube {
+	font-size: 2.2rem;
+	width: 300px;
+	height: 300px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+	border: 5px solid white;
+	text-align: left;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	background: rgba(0,0,0,1);
+	color: rgba(255,255,255,1);
+	margin-left: 1rem;
+	transition: all 0.2s ease-in-out;
+}
+.cube:hover {
+	background: rgba(255,255,255,1);
+	color: rgba(0,0,0,1);
+}
+.strike {
+	text-decoration: line-through;
+}
+
+@media screen and (max-width: 930px) {
+	.cubes-container {
+		width: 100vw;
+	}
+}
+a {
+	color: inherit;
+	text-decoration: none;
 }
