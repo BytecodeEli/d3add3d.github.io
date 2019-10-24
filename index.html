@@ -1,33 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="bootstrap.css">
-		<link rel="stylesheet" href="style.css">
-		<title>D3add3d</title>
-	</head>
-	<body>
-		<header><h1>D3add3d</h1><nav></nav></header>
-		<main>
-			<header>EE tutorials (coming soon)</header>
-			<div class="cubes-container">
-				<a href="#">
-					<div class="cube">
-						(Not)Getting zapped: an introduction to designing your own circuits
-					</div>
-				</a>
-				<a href="#">
-					<div class="cube">
-						Putting it on <span class="strike">paper</span> screen: introduction to CAD for EE
-					</div>
-				</a>
-				<a href="#">
-					<div class="cube">
-						The Joy of Etching<br>Presented by: dangerous chemicals
-					</div>
-				</a>
-			</div>
-		</main>
-		<footer>Copyright 2019 D3add3d</footer>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <title>D3Net</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+
+        body {
+            background: black;
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
+            padding-left: 2rem;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .small {
+            font-size: 0.7rem;
+            font-weight: 300;
+        }
+
+        .online {
+            color: rgb(150, 255, 150);
+        }
+
+        .offline {
+            color: rgb(255, 150, 150);
+        }
+
+        .wip {
+            color: rgb(255, 255, 150);
+        }
+
+        .deleted {
+            color: rgb(100, 100, 100);
+        }
+
+        h3 {
+            margin-top: 3rem;
+        }
+
+        .one::after {
+            content: "ONE";
+            background: rgb(0, 50, 150);
+            color: white;
+            border-radius: 25%;
+            font-size: 0.5rem;
+            padding: 0.2rem;
+            font-weight: 300;
+            margin-left: 0.5rem;
+            text-decoration: none;
+        }
+
+        .two::after {
+            content: "TWO";
+            background: rgb(0, 150, 50);
+            color: white;
+            border-radius: 25%;
+            font-size: 0.5rem;
+            padding: 0.2rem;
+            font-weight: 300;
+            margin-left: 0.5rem;
+            text-decoration: none;
+        }
+
+        .ot::after {
+            content: "???";
+            background: rgb(50, 50, 50);
+            color: white;
+            border-radius: 25%;
+            font-size: 0.5rem;
+            padding: 0.2rem;
+            font-weight: 300;
+            margin-left: 0.5rem;
+            text-decoration: none;
+        }
+
+        .spacer {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>D3Net</h1>
+    <h2>The free volatile services provider*</h2>
+    <p class="bold">
+        Free volatile services offered:
+    </p>
+    <ul>
+        <li><a href="#irc" class="online one">UnrealIRCd IRC server (un-linked - online)</a></li>
+        <li><a href="#matrix" class="online one">Matrix home-server (federated - online)</a></li>
+        <li><a href="#pleroma" class="wip two">Pleroma instance (federated - WIP)</a></li>
+        <li class="wip one">OpenVPN (WIP)</li>
+        <li class="offline ot">Openfire XMPP server (offline)</li>
+        <li class="deleted one">Zulip (replaced with Matrix)</li>
+        <li class="deleted two">FreePBX/asterisk server (deleted)</li>
+    </ul>
+    <p class="small">
+        Legend:<br>
+        - <span class="online">Online</span> - up and running<br>
+        - <span class="offline">Offline</span> - currently not used but still exists<br>
+        - <span class="wip">Work in progress</span> - being worked on, will be available soon<br>
+        - <span class="deleted">Deleted</span> - for one reason or another<br>
+        - ONE - First server<br>
+        - TWO - Second server<br>
+        - ??? - Some other server ¯\_(ツ)_/¯
+    </p>
+    <h3 id="irc">#irc</h3>
+    <p>
+        Internet Relay Chat is a quite old protocol but still fun to use...<br>
+        I use this server as a cheap way of implementing<br>
+        instant messaging on my clients' websites.<br>
+        For security and other reasons this server is NOT linked to any other<br>
+        IRC server, nor is it a part of a network.<br>
+        If you have a similar use case for it or you just want an unlinked<br>
+        IRC chat to hang out with your friends feel free to hit me up.
+    </p>
+    <h3 id="matrix">#matrix</h3>
+    <p>
+        A new instant messaging, encrypted, p2p, federated, etc... protocol.<br>
+        I am running my own Synapse instance to connect to the federation,<br>
+        if you are "homeless"(you do not have a matrix home server)<br>
+        and I know you, hit me up and I can set you up with an account.<br>
+        <br>
+        PS: I also have an instance of Riot running for those times when<br>
+        you do not want to download a desktop/mobile client app.
+    </p>
+    <h3 id="pleroma">#pleroma</h3>
+    <p>
+        ActivityPub, OStatus... DDG it or something... I want to try running<br>
+        my own instance. If I know you at least a little there is a good chance<br>
+        that I will provide you with an account :)
+    </p>
+    <h3 id="stuff">#other_stuff</h3>
+    <p>
+        Anything that does not have its own paragraph is probably deleted<br>
+        or currently not worth my time... which practically means the same.<br>
+        <br>
+        PS: OpenVPN is planned but I currently have no need for it as there<br>
+        are multiple people supplying me with VPNs anyway.
+    </p>
+    <h3>*</h3>
+    <p>
+        I am not a "service provider" I am just a dude who likes to self-host<br>
+        a bunch of stuff and lets his friends use it as well.
+    </p>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <h3>nope</h3>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <h3>no</h3>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <h3>...</h3>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <h3>go back</h3>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <h3>I mean it</h3>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <h3>Ok, fine...</h3>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <div class="spacer">&nbsp;</div>
+    <h3>Contact</h3>
+    <p>
+        As I said, I am not a service provider but<br>
+        if you so insist... here is my contact information:<br>
+    <pre>
+    E-mail: admin_[_at_]_d3add3d_[_dot_]_net
+</pre>
+    That's it, now go away...
+    </p>
+</main>
+</body>
 </html>
