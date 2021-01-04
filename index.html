@@ -25,6 +25,11 @@
             font-size: 0.7rem;
             font-weight: 300;
         }
+		
+		.padleg {
+			margin-bottom: 0.4rem;
+			display: inline-block;
+		}
 
         .online {
             color: rgb(150, 255, 150);
@@ -37,6 +42,10 @@
         .wip {
             color: rgb(255, 255, 150);
         }
+		
+		.planned {
+			color: rgb(150, 255, 255);
+		}
 
         .deleted {
             color: rgb(100, 100, 100);
@@ -45,41 +54,44 @@
         h3 {
             margin-top: 3rem;
         }
+		
+		.tag {
+			text-decoration: none;
+		}
+		
+		.tag::after {
+			color: white;
+			border-radius: 17%;
+			font-size: 0.5rem;
+			padding: 0.2rem;
+			font-weight: 300;
+			margin-left: 0.5rem;
+			text-decoration: none;
+		}
 
         .one::after {
             content: "ONE";
             background: rgb(0, 50, 150);
-            color: white;
-            border-radius: 25%;
-            font-size: 0.5rem;
-            padding: 0.2rem;
-            font-weight: 300;
-            margin-left: 0.5rem;
-            text-decoration: none;
         }
 
         .two::after {
             content: "TWO";
             background: rgb(0, 150, 50);
-            color: white;
-            border-radius: 25%;
-            font-size: 0.5rem;
-            padding: 0.2rem;
-            font-weight: 300;
-            margin-left: 0.5rem;
-            text-decoration: none;
         }
+		
+		.kf1::after {
+			content: "KF1";
+			background: rgb(200, 100, 0);
+		}
+		
+		.loc::after {
+			content: "LOC";
+			background: rgb(150, 0, 150);
+		}
 
         .ot::after {
             content: "???";
             background: rgb(50, 50, 50);
-            color: white;
-            border-radius: 25%;
-            font-size: 0.5rem;
-            padding: 0.2rem;
-            font-weight: 300;
-            margin-left: 0.5rem;
-            text-decoration: none;
         }
 
         .spacer {
@@ -94,43 +106,23 @@
         List of services for friends, family and customers:
     </p>
     <ul>
-        <li><a href="#commatrix" class="wip one">UnrealIRCd IRC server (reinstall in-progress)</a></li>
-		<li><a href="#commatrix" class="wip one">ZNC IRC bouncer (reinstall in-progress)</a></li>
-        <li><a href="#commatrix" class="wip one">Matrix home-server (reinstall in-progress)</a></li>
-        <li><a href="#commatrix" class="wip one">Pleroma instance (reinstall in-progress)</a></li>
-		<li><a href="https://kingforge.net" target="_blank" class="wip two">Minecraft/Minetest/Custom voxel game server (WIP)</a></li>
-		<li><span class="wip two">OpenDJ - LDAP server (WIP)</span></li>
-        <li><span class="wip two">OpenVPN (WIP)</span></li>
-		<li><a href="#xmpp" class="deleted ot">Openfire XMPP server (offline)<a/></li>
-		<li><span class="deleted one">Weblate</span></li>
-        <li><span class="deleted one">Zulip (replaced with Matrix)</span></li>
-        <li><span class="deleted two">FreePBX/asterisk server (deleted)</span></li>
+		<li><a href="https://kingforge.net" target="_blank" class="online tag kf1">Minecraft modded server - KingForge</a></li>
+        <li><span class="online tag two">OpenVPN</span></li>
+		<li><a href="#xmpp" class="planned tag ot">XMPP server<a/></li>
+        <li><span class="online tag loc">FreePBX/asterisk server</span></li>
     </ul>
     <p class="small">
         Legend:<br>
         - <span class="online">Online</span> - up and running<br>
         - <span class="offline">Offline</span> - currently not used but still exists<br>
         - <span class="wip">Work in progress</span> - being worked on, will be available soon<br>
-        - <span class="deleted">Deleted</span> - for one reason or another<br>
-        - ONE - First server<br>
-        - TWO - Second server<br>
-        - ??? - Some other server ¯\_(ツ)_/¯
-    </p>
-	<h3 id="commatrix">#comMatrix</h3>
-	<p>
-		ONE will become a communication matrix, running IRC+Bouncer, Pleroma<br>
-		and Matrix with bridges + various utility bots for Discord, Telegram,<br>
-		IRC and other platforms.
-	</p>
-	<h3 id="xmpp">#xmpp</h3>
-	<p>
-		Openfire was used as a bridge to in-game chat for PaperMC instance running on<br>
-		official Craft.SH server craft-tech of Silicon Hill students' club.
-	</p>
-    <h3 id="stuff">#other_stuff</h3>
-    <p>
-        Anything that does not have its own paragraph is probably deleted<br>
-        or currently not worth my time... which practically means the same.<br>
+		- <span class="planned">Planned</span> - planned for the future, not being worked on ATM<br>
+        - <span class="deleted">Deleted</span> - for one reason or another<br><br>
+        - <span class="tag one padleg"></span>&nbsp;&nbsp;- First server<br>
+        - <span class="tag two padleg"></span>&nbsp;&nbsp;- Second server<br>
+        - <span class="tag kf1 padleg"></span>&nbsp;&nbsp;- KingForge One<br>
+		- <span class="tag loc padleg"></span>&nbsp;&nbsp;- Local server on some subnet<br>
+		- <span class="tag ot"></span>&nbsp;&nbsp;- Other server
     </p>
     <h3>Contact</h3>
     <p>
