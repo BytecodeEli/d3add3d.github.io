@@ -1,0 +1,30 @@
+*
+	padding 0
+	margin 0
+	box-sizing border-box
+
+.gradient-border
+	border-radius 0.5rem
+	position relative
+	width 100%
+	background black
+	&::before
+		background linear-gradient(90deg, #303030, #303030 25%, #00dc82 50%, #36e4da 75%, #0047e1)
+		background-position 0 0
+		background-size 400% auto
+		border-radius 0.5rem
+		bottom 0
+		content ""
+		left 0
+		mask linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0)
+		mask-composite exclude
+		opacity 0.5
+		padding 2px
+		position absolute
+		right 0
+		top 0
+		transition background-position .3s ease-in-out,opacity .2s ease-in-out
+		width 100%
+	&:hover::before
+		background-position -50% 0
+		opacity 1
